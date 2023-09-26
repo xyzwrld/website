@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'SanFrancisco-regular'; /* Sostituisci con il nome che desideri assegnare al tuo font */
+    src: url('assets/font/SFNSText-Bold.otf'); /* Sostituisci con il percorso reale del tuo font .woff */
+    /* Altri attributi opzionali, come font-weight e font-style, possono essere specificati qui */
+  }
+@font-face {
+    font-family: 'SanFrancisco-black'; /* Sostituisci con il nome che desideri assegnare al tuo font */
+    src: url('assets/font/SFNSDisplay-Black.otf'); /* Sostituisci con il percorso reale del tuo font .woff */
+    /* Altri attributi opzionali, come font-weight e font-style, possono essere specificati qui */
+  }
+
+body{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat; 
+
+    font-family: "SanFrancisco";
+
+    margin: 0;
+}
+
+.title{
+    position: absolute;
+    z-index: 2;
+}
+
+.overlay > h1{
+    color: red;
+    text-align: center;
+
+    font-family: "SanFrancisco-black";
+    font-size: 13vh;
+    margin-top: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+
+    display: fixed;
+
+    background-image: url('./assets/sky.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adatta il video alle dimensioni del contenitore */
+  }
+
+.dir{
+    width: 10vw;
+
+    /* border: 1px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dir > img{
+    width: 50%;
+    z-index: 2;
+}
+
+.dir > img:focus{
+    border-radius: 4px;
+    border: 2px solid #8a8a8a;
+    background-color: rgba(0, 0, 0, 0.133);
+}
+
+.dir > span{
+    text-align: center;
+    font-family: "SanFrancisco-regular";
+    font-size: small;
+    margin-top: 0.5vh;
+
+    color: white;
+}
+
+
+#dragElement1, #dragElement2, #dragElement3  {
+    cursor: grab;
+    user-drag: element;
+    user-select: none;
+    position: absolute;
+    z-index: 1;
+}
+
+/* #dragElement1:active, #dragElement2:active, #dragElement3:active {
+    cursor: grabbing;
+} */
+
+#dragElement1{
+    top: 400px;
+    left: 250px;
+}
+
+#dragElement2{
+    top: 100px;
+    left: 320px;
+}
+
+#dragElement3{
+    top: 550px;
+    left: 1200px
+}
+
+.overlay {
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Aggiungi altri stili CSS se necessario */

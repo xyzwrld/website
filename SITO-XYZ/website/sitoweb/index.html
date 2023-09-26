@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container" id="container">
+
+        <div class="overlay"><h1>KOWI.WRLD</h1></div>
+        
+        <video autoplay loop muted playsinline  id="videoBackground">
+            <source src="assets/KOWI-LOGO.mp4" type="video/mp4"> <!-- Sostituisci con il percorso al tuo video -->
+            Il tuo browser non supporta la riproduzione di video.
+        </video>
+
+        <div class="dir" id="dragElement1">
+            <img src="./assets/dir.png" id="asset1">
+            <span>TITOLO 1</span>
+        </div>
+    
+        <div class="dir" id="dragElement2">
+            <img src="./assets/dir.png " id="asset2">
+            <span>TITOLO 2</span>
+        </div>
+    
+        <div class="dir" id="dragElement3">
+            <img src="./assets/dir.png" id="asset3">
+            <span>TITOLO 3</span>
+        </div>
+        <!-- Aggiungi altri elementi se necessario -->
+
+
+        <div class="overlay" id="overlay1">
+            <div class="overlay-content">
+                Contenuto del pannello 1
+                <button id="closeOverlay1">Chiudi</button>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay2">
+            <div class="overlay-content">
+                Contenuto del pannello 2
+                <button id="closeOverlay2">Chiudi</button>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay3">
+            <div class="overlay-content">
+                Contenuto del pannello 3
+                <button id="closeOverlay3">Chiudi</button>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
